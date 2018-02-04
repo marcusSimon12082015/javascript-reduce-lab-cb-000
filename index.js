@@ -8,7 +8,7 @@ var totalBatteries = batteryBatches.reduce(sumBatteryBatches,0);
 function lineFunction(occurrences,line){
   var wordCount = line.split(" ").length;
   if (occurrences[wordCount]) {
-    occurrences[wordCount]++;
+    occurrences[wordCount] =+ 1;
   }else {
     occurrences[wordCount] = 0;
   }
