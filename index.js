@@ -34,4 +34,4 @@ function lineFunction(occurrences,line){
   return occurrences;
 }
 
-var wordCountMap = monologueLines.reduce(lineFunction,{});
+let wordCountMap = monologueLines.reduce(lineFunction,{});
