@@ -5,17 +5,6 @@ function sumBatteryBatches(sumTotal,batteryBatch){
 }
 var totalBatteries = batteryBatches.reduce(sumBatteryBatches,0);
 
-function lineFunction(occurrences,line){
-  var wordCount = line.split(" ").length;
-  if (occurrences[wordCount]) {
-    occurrences[wordCount] =+ 1;
-  }else {
-    occurrences[wordCount] = 0;
-  }
-  return occurrences;
-}
-
-var wordCountMap = monologueLines.reduce(lineFunction,{});
 
 const monologueLines = [
   'Who are you talking to right now?',
@@ -33,3 +22,16 @@ const monologueLines = [
   'No.',
   'I am the one who knocks!'
 ];
+
+
+function lineFunction(occurrences,line){
+  var wordCount = line.split(" ").length;
+  if (occurrences[wordCount]) {
+    occurrences[wordCount] =+ 1;
+  }else {
+    occurrences[wordCount] = 0;
+  }
+  return occurrences;
+}
+
+var wordCountMap = monologueLines.reduce(lineFunction,{});
