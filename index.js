@@ -31,7 +31,7 @@ function lineFunction(occurrences,line){
   }else {
     occurrences[wordCount] = 1;
   }
-  debugger;
+  //debugger;
   return occurrences;
 }
 
