@@ -26,7 +26,7 @@ const monologueLines = [
 
 function lineFunction(occurrences,line){
   var wordCount = line.split(" ").length;
-  if (occurrences[wordCount]) {
+  if (occurrences.hasOwnProperty(wordCount)) {
     occurrences[wordCount] += 1;
   }else {
     occurrences[wordCount] = 0;
