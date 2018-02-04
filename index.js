@@ -29,8 +29,9 @@ function lineFunction(occurrences,line){
   if (occurrences.hasOwnProperty(wordCount)) {
     occurrences[wordCount] += 1;
   }else {
-    occurrences[wordCount] = 0;
+    occurrences[wordCount] = 1;
   }
+  debugger;
   return occurrences;
 }
 
